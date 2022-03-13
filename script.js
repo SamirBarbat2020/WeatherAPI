@@ -38,7 +38,7 @@ function showApi(weatherApiAsJson) {
     document.getElementById('local-name').innerHTML += `<h2>Location: ${weatherApiAsJson.name}</h2>`;
     document.getElementById('temp').innerHTML = '';
     document.getElementById('temp').innerHTML += `
-               
+                    <h1> ${weatherApiAsJson.weather[0].description}</h1>
                     <h3>Temperatur: <span style="color:tomato; font-size:30px">${parseInt(weatherApiAsJson.main.temp)}</span></h3>
                     <h3>Max-Temperatur: <span style="color:tomato; font-size:30px">${parseInt(weatherApiAsJson.main.temp_max)}</span></h3>
                     <h3>Min-Temperatur: <span style="color:tomato; font-size:30px">${parseInt(weatherApiAsJson.main.temp_min)}</span></h3>
@@ -46,10 +46,10 @@ function showApi(weatherApiAsJson) {
                     <h3>Wind speed: <span style="color:tomato; font-size:30px">${parseInt(weatherApiAsJson.wind.speed)}</span> Km/h</h3>           
             `;
 
-    ChangingBackground(description);
+    changingBackground(description);
 }
 
-function ChangingBackground(description) {
+function changingBackground(description) {
 
     if (description == 'clear sky') {
         document.getElementById('left-container').style.backgroundImage = `url('${fotos[5]}')`;
