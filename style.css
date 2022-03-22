@@ -7,6 +7,32 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.container_{
+    padding-bottom: 30px;
+}
+
+.navbar-style{
+    /* background: #EFEFBB;
+	background: -webkit-linear-gradient(to right, #b4afe2, #f0f097);
+	background: linear-gradient(to right, #6c64ac, #cece3f); */
+
+    background-color:rgba(255,255,0,0.0) !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.navbar-brand{
+    color: tomato !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 30px !important;
+    font-weight:bold;
+}
+
+
 .container {
     width: 80%;
     height: 80vh;
